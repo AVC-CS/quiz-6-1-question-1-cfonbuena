@@ -28,7 +28,6 @@ int getNextPrime(int begin){
         for (int i = 2; i < n; i++){ // skip 0, 1, and start dividing by 2, 3, etc
             if (n % i == 0)     // no remainder, therefore not prime
             prime = false;
-            break;
         }
         if (prime)
             return n;
