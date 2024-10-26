@@ -4,9 +4,9 @@ using namespace std;
 //********************
 // Declare Function Prototypes
 //********************
-void getTwoValues(int, int);
-int getNextPrime(int);
-int getPrevPrime(int);
+void getTwoValues(int &, int &);
+int getNextPrime(int &);
+int getPrevPrime(int &);
 
 // ******************************
 // Implement all your functions here
@@ -52,4 +52,6 @@ int getPrevPrime(int &end){
             break;
         else n--;
     }
+    n = prime2;
+    return prime2;
 }
