@@ -22,7 +22,6 @@ void getTwoValues(int &begin, int &end){
 
 int getNextPrime(int begin){
     int n = begin++;    // Automatically add 1 to the beginning value
-
     while(true){
         bool prime = true;  // Assume true unless otherwise
         for (int i = 2; i < n; i++){ // skip 0, 1, and start dividing by 2, 3, etc
@@ -38,7 +37,6 @@ int getNextPrime(int begin){
 
 int getPrevPrime(int end){
     int n = end--;  // auto subtract 1 from end
-
     while(true){
         bool prime = true; // assume unless otherwise
         for (int i = 2; i < n; i++){
