@@ -5,8 +5,8 @@ using namespace std;
 // Declare Function Prototypes
 //********************
 void getTwoValues(int &, int &);
-int getNextPrime(int &);
-int getPrevPrime(int &);
+int getNextPrime(int );
+int getPrevPrime(int );
 
 // ******************************
 // Implement all your functions here
@@ -20,7 +20,7 @@ void getTwoValues(int &begin, int &end){
     }
 }
 
-int getNextPrime(int &begin){
+int getNextPrime(int begin){
     int prime1;
     int n = begin++;    // Automatically add 1 to the beginning value
 
@@ -38,7 +38,7 @@ int getNextPrime(int &begin){
     return prime1;
 }
 
-int getPrevPrime(int &end){
+int getPrevPrime(int end){
     int prime2;
     int n = end--;  // auto subtract 1 from end
 
