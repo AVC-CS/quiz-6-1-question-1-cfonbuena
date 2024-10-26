@@ -42,7 +42,7 @@ int getPrevPrime(int end){
 
     while(true){
         bool prime = true; // assume unless otherwise
-        for (int i = 2; i < end; i++){
+        for (int i = 2; i < n; i++){
             if (n % i == 0)
             prime = false;
             break;
